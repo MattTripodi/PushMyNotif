@@ -7,14 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2FEE9E36C5AF11C836C16114 /* Pods_PushMyNotif.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7F520EFF67BAABA540492A3 /* Pods_PushMyNotif.framework */; };
 		EEB76AED1F1968B70093FE3D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB76AEC1F1968B70093FE3D /* AppDelegate.swift */; };
 		EEB76AEF1F1968B70093FE3D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB76AEE1F1968B70093FE3D /* ViewController.swift */; };
 		EEB76AF21F1968B70093FE3D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEB76AF01F1968B70093FE3D /* Main.storyboard */; };
 		EEB76AF41F1968B70093FE3D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEB76AF31F1968B70093FE3D /* Assets.xcassets */; };
 		EEB76AF71F1968B70093FE3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEB76AF51F1968B70093FE3D /* LaunchScreen.storyboard */; };
+		EEB76AFF1F1969A40093FE3D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EEB76AFE1F1969A40093FE3D /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		57D59D62AA53D29D0A652FF3 /* Pods-PushMyNotif.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PushMyNotif.release.xcconfig"; path = "Pods/Target Support Files/Pods-PushMyNotif/Pods-PushMyNotif.release.xcconfig"; sourceTree = "<group>"; };
+		6244DED34644F8A83B938B22 /* Pods-PushMyNotif.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PushMyNotif.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PushMyNotif/Pods-PushMyNotif.debug.xcconfig"; sourceTree = "<group>"; };
+		B7F520EFF67BAABA540492A3 /* Pods_PushMyNotif.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PushMyNotif.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEB76AE91F1968B70093FE3D /* PushMyNotif.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PushMyNotif.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEB76AEC1F1968B70093FE3D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EEB76AEE1F1968B70093FE3D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +27,7 @@
 		EEB76AF31F1968B70093FE3D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EEB76AF61F1968B70093FE3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EEB76AF81F1968B80093FE3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EEB76AFE1F1969A40093FE3D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FEE9E36C5AF11C836C16114 /* Pods_PushMyNotif.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0578A1CB2E5C71596DA7BD09 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B7F520EFF67BAABA540492A3 /* Pods_PushMyNotif.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4F2B80039D8FA96E5EAA3B50 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6244DED34644F8A83B938B22 /* Pods-PushMyNotif.debug.xcconfig */,
+				57D59D62AA53D29D0A652FF3 /* Pods-PushMyNotif.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		EEB76AE01F1968B70093FE3D = {
 			isa = PBXGroup;
 			children = (
 				EEB76AEB1F1968B70093FE3D /* PushMyNotif */,
 				EEB76AEA1F1968B70093FE3D /* Products */,
+				4F2B80039D8FA96E5EAA3B50 /* Pods */,
+				0578A1CB2E5C71596DA7BD09 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +80,7 @@
 		EEB76AEB1F1968B70093FE3D /* PushMyNotif */ = {
 			isa = PBXGroup;
 			children = (
+				EEB76AFE1F1969A40093FE3D /* GoogleService-Info.plist */,
 				EEB76AEC1F1968B70093FE3D /* AppDelegate.swift */,
 				EEB76AEE1F1968B70093FE3D /* ViewController.swift */,
 				EEB76AF01F1968B70093FE3D /* Main.storyboard */,
@@ -71,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EEB76AFB1F1968B80093FE3D /* Build configuration list for PBXNativeTarget "PushMyNotif" */;
 			buildPhases = (
+				863C8D5369036B161CA7C259 /* [CP] Check Pods Manifest.lock */,
 				EEB76AE51F1968B70093FE3D /* Sources */,
 				EEB76AE61F1968B70093FE3D /* Frameworks */,
 				EEB76AE71F1968B70093FE3D /* Resources */,
+				1265D5D990B1991104F6BE13 /* [CP] Embed Pods Frameworks */,
+				02A73FC8A34B18E5E4EFA95C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -126,11 +156,60 @@
 			files = (
 				EEB76AF71F1968B70093FE3D /* LaunchScreen.storyboard in Resources */,
 				EEB76AF41F1968B70093FE3D /* Assets.xcassets in Resources */,
+				EEB76AFF1F1969A40093FE3D /* GoogleService-Info.plist in Resources */,
 				EEB76AF21F1968B70093FE3D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		02A73FC8A34B18E5E4EFA95C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PushMyNotif/Pods-PushMyNotif-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1265D5D990B1991104F6BE13 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PushMyNotif/Pods-PushMyNotif-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		863C8D5369036B161CA7C259 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EEB76AE51F1968B70093FE3D /* Sources */ = {
@@ -261,6 +340,7 @@
 		};
 		EEB76AFC1F1968B80093FE3D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6244DED34644F8A83B938B22 /* Pods-PushMyNotif.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = J5P95JSAVD;
@@ -274,6 +354,7 @@
 		};
 		EEB76AFD1F1968B80093FE3D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57D59D62AA53D29D0A652FF3 /* Pods-PushMyNotif.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = J5P95JSAVD;
