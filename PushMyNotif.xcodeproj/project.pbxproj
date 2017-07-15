@@ -28,6 +28,7 @@
 		EEB76AF61F1968B70093FE3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EEB76AF81F1968B80093FE3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EEB76AFE1F1969A40093FE3D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		EEB76B001F196DE30093FE3D /* PushMyNotif.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PushMyNotif.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +81,7 @@
 		EEB76AEB1F1968B70093FE3D /* PushMyNotif */ = {
 			isa = PBXGroup;
 			children = (
+				EEB76B001F196DE30093FE3D /* PushMyNotif.entitlements */,
 				EEB76AFE1F1969A40093FE3D /* GoogleService-Info.plist */,
 				EEB76AEC1F1968B70093FE3D /* AppDelegate.swift */,
 				EEB76AEE1F1968B70093FE3D /* ViewController.swift */,
@@ -128,6 +130,11 @@
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = J5P95JSAVD;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -343,6 +350,7 @@
 			baseConfigurationReference = 6244DED34644F8A83B938B22 /* Pods-PushMyNotif.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PushMyNotif/PushMyNotif.entitlements;
 				DEVELOPMENT_TEAM = J5P95JSAVD;
 				INFOPLIST_FILE = PushMyNotif/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -357,6 +365,7 @@
 			baseConfigurationReference = 57D59D62AA53D29D0A652FF3 /* Pods-PushMyNotif.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PushMyNotif/PushMyNotif.entitlements;
 				DEVELOPMENT_TEAM = J5P95JSAVD;
 				INFOPLIST_FILE = PushMyNotif/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -385,6 +394,7 @@
 				EEB76AFD1F1968B80093FE3D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
